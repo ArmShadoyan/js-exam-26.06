@@ -1,0 +1,434 @@
+## ՔՆՆՈՒԹՅՈՒՆ N1
+
+1. Թվարկել բոլոր թայփերը մեկնաբանելով և սահմանելով յուրաքանչյուրի աշխատանքը (բացառությամբ Symbol)\
+
+	answer:
+JS type-երը բաժանվում են 2 խմբի PRIMITIVE ու REFERANCE/OBJECT:
+	primitive typer-ն են .NUMBER- ը՝որը ներկայացնումա բոլոր թվերը,.STRING-ը էն ամեն ինչնա ինչը գրվում ա չակերտների մեջ,ունենք հայտարարելու 3 ձև՝  <""> <''> <``>,որոնցից իր հատկություններով տարբերվումա մենակ երրորդը,որի մեջ կարանք փոփոխական մցնենք:.BOOLEAN-ը
+որը լինումա true կամ false:.NULL-ը էնա ինչը չկա,գոյություն չունի:.UNDEFINED-ը էնա ինչը որ չի գտնվել:BIGINT-ը շատ մեծ թվերի հետ աշխատելու համարա:
+	referance type-երն են՝ .ARRAY-ը, .FUNCTION-ը,որը տարբեր տեղեր օգտագործելով ստանում ենք են ինչը մեզ վերադարցնումա իրա մեջ գրված կոդը,իրան կարանք տանք նաև պարամետրեր հետո կանչելուց օգտագործենք դրանք: .NEW DATE()-ը, NEW REGEXP()-ը, NEW EROR-ը ու OBJECT-ը;
+
+
+2. Ինչ տարբերություններ կան LET-ի, CONST-ի և VAR-ի միջև
+	answer:
+
+	CONST-ը LET-ից տարբերվումա նրանով որ CONST-ով հայտարարված փոփոխականները հնարավոր չի մի ուչիշ տեղ փոփոխել,մնացած առումներով նույնն են,իսկ VAR-ը արդեն հնացածա իրանով էլ չեն աշխատում,ինքը տեսանելիա block scope ից դուրս:
+
+3. Թվարկել տեսանելիության դաշտերը և սահմանել իրենց տարբերությունները
+
+	answer:
+		տեսանելիության դաշտերը լինում են local ու global,   global - ի դեպքում ցանկացած փոփոխականի ցանկացած տեղից կարանք acsess ունենաք իսկ local - դեպքում միայն scope- երի ներսից:
+
+4. Ի՞նչ տարբերություն կա Block Scope-ի և Function scope-ի միջև
+
+	answer:
+		
+		function scope-ի մեջ ցանկացած ձևով հայտարարված փոփոխականի արժեքը scope-ից դուրս չենք կարող ստանալ,  իսկ block scope-ի դեպքում var-ով կարող ենք ստանալ:
+
+5. Ինչո՞վ են վտանգավոր գլոբալ փոփոխականներն ու var-երը
+
+	answer: 
+			իրանցով հայտարված փոփոխականները կարող ենք մի ուրիշ տեղ հայտարարել,մոռանալով որ այդպիսի փոփոխական արդեն կա,և ոչ մի զգուշացում չստանալով,կորցնել այն ամենը ինչը կար հին փոփոխականի մեջ:
+		
+
+6. Թվարկել ֆունկցիաները ըստ իրենց անունների ու մեկնաբանել իրենց աշխատանքը
+
+	answer:
+			1.function declaration՝ էս ֆունկցիան հայտարարելուց տալիս ենք բանալի բառը՝ function someFunction հետո բացում փակագծերը,որտեղ կարող ենք գրել parametr -եր function someFunction(parametr,...) այնուհետև դնում ենք scope-երը {}:սա մնացածից տարբերվումա նրանով որ կարող ենք կանչել և ֆունկցիան հայտարարելւց առաջ և հետո:
+			2.function expression` էս դեպքում հայտարարում ենք փոփոխական ու ֆունկցիան տալիս ենք այդ փոփոխականին որպես արժեք,իրան հայտարարում ենք const-ով որովհետև referance type - ա: const someFunc = function(){}
+			3.arrow function`  էս դեպում էլ ենք հայտարարում փոփոխականով,ի տարբերություն մնացածի էս ֆունկցիան ավելի կարճա գրվում՝
+			const someFunction = () => {}
+			
+7. ինչ տարբերություն կա postfix և prefix գրելաձևի միջև, ու որ դեպքերում ենք իրենց օգտագործում
+
+	answer:
+			postfix ի դեպքում օպերատորը դրվումա փոփոխականից հետո,սկզբում կատարվումա ստուգումը հետո գործողությունը: i++
+			prefix ի դեպքում օպերատորը դրվումա փոփոխականից առայ,սկզբում կատարվումա գործողությունը հետո ստուգումը:  ++i
+			իրենց օգտագործում ենք loop երի ժամանակ:
+			
+
+8. Մեկնաբանել null-ի և undefined-ի տարբերությունները
+		
+	answer:
+		null - էտ էնա ինչը ընդանրապես գոյություն չունի: իսկ undefined - ը գոյություն ունի բայց հայտնի չի:
+
+9. HTML-ում script թեգը միացնելու ամենահարմար վայրը դա ... շարունակել միտքը և սահմանել թե ինչու
+
+	answer:
+		դա փակվող body ից վերև միացնելն ա,որովհետև էդ դեպքում համ head ն ա աշխատում համ body ն,իսկ մյուս դեպքում միայն head ը:
+
+10. JavaScript-ը արդյո՞ք կարող է բրաուզերում աշխատել առանց HTML-ի, գրեք այո կամ ոչ
+
+	answer: 
+		ոչ:
+
+11. թվարկեք Boolean օպերատորները և սահմանեք նրանց նշանակություններն ու անունները
+		
+	answer:
+		դրանք են true-ն ու false -ը,օգտագործվում են ստւգումների ժամանակ:օպերատորներն են՝ ==,===,!=,!==,<,>,<=,>=  :
+			
+
+12. ինչ տարբերություն կա այս օպերատոների միջև ==, ===
+	
+	answer:
+		== էս օպերատորը միայն արժեքնա ստուգում իսկ === սա ավելի խիստա ու ստուգումա նաև type-ը:
+
+13. ինչ տարբերություն կա պրիմիտիվ և հղումային թայփերի միջև
+
+	answer:
+		ի տարբերություն պրիմիտիվ թայփերի,հղումաին թայփերը օբջեքթներ են ու իրանց մեջ կարող են պարունակել մեթոդներ:
+		
+14. ինչի՞ համար են օգտագործվում BREAK և CONTINUE օպերատորները և ո՞րտեղ
+
+	answer:
+		break-ը օգտագործվումա switch-ի մեջ ու ցիկլի ժամանակ,ցիկլից դուրս գցելու համար,իսկ continue ն ցիկլի մի քայլի վրայովա թռնում ու հաջորդ քայլից շարունակումա:
+
+15. Ո՞ր մաթեմատիկական օպերատորի դեպքում և ո՞ր պագայաում console-ում կարող ենք ստանալ infinity
+
+	answer:
+		------------------------------
+
+16. ի՞նչ է նշանակում NaN և ո՞ր դեպքում կարող ենք իրեն ստանալ
+
+	answer:
+		NaN - նշանակումա Not a Number այսինքն թիվ չի, կարող ենք ստանալ թվի և մեկ այլ type ի հետ մաթեմաթիկական գոծողություն կատարելիս:
+
+17. ի՞նչ է նշանակում NPM
+	
+	answer:
+		NPM ը դա Node Packcage Manager նա,որի packcage ները ինստալ անելով ավելի ենք հեշտացնում մեր աշխատանքը:
+
+18. Ինչպե՞ս ենք NPM-ը միացնում մեր պրոյեկտին
+
+	answer:
+		install ենք անում հետո մեր ուզած packcage-ի համապատասխան հրահանգները կոդ էդիթորի տերմինալով ուղղարկում ենք,ու մի հատ ել Էդիթորի մեջ ենք ակտիվացնում:
+
+19. Ի՞նչ package-ներ գիտեք և ինչպե՞ս եք դրանք ավելացրել ձեր պրոյեկտի մեջ
+
+	answer:
+		jshint;NPM ի կայքից նաել եմ հրահանգները ու տերմինալով ուղղարկելով ակտիվացրել:
+
+
+20. Ի՞նչ տարբերություն կա DevDependecy-ի և Dependecy-ի միջև
+
+	answer:
+		--------------
+		
+
+21. for loop-ով աստղանիշներով console-ում ստանալ լիարժեք՝ կլորանման բան (անկյունները կոտրած), քառակուսի, եռանկյունի, 
+ուղղանկյուն, երկու քառակուսի իրար կողք և ցանկացած տառ (latin)
+
+let width= 7;
+let result="";
+for (let i=1; i <=width; i++) {
+for (let j = 1; j <= width * 2 - 1;j++){
+if (j <= width-i || j >= width+i){
+result += "*";
+	} else{
+result +="*";
+	}
+}
+result += "\n";
+
+}console.log(result)
+_________________________________________________
+for (let i = 1; i <= 7; i++) {
+ 
+ for (let j = 7; j > i; j--) {
+  resultt += " ";
+ }
+    for(let j = 0; j < i; j++){
+        resultt +=" "+"*";
+    }
+ resultt += "\n";
+}
+console.log(resultt);
+__________________________________________________
+
+22. ստեղծում ենք փոփոխական, որի մեջ ստեղծում եք սթրինգ 500 բառից բաղկացած պատմություն, ու էդ սթրիգի մեջ օգտագործում եք ${} սրանցից
+ու մեջը գրում եք տարատեսակ JS կոդեր, որոնք կարող են ձեր պատմության հետ կապ ունենալ, օրինակ (տարեթվեր, անուններ և այլն)
+		
+	answer;
+		const a = "Բրենդան Այկ"
+const b = "Netscape"
+const c = "(1995 թվականի ապրիլի 4)"
+const d = "HTTP";
+const e = "Մայիսի 8";
+const f = "1995 թ. դեկտեմբերի 4";
+const g = 1996
+const jsHistory = `Նախքան ${a}-ի ներգրավումը ${b} ընկերություն ${c},
+խնդիր էր դրված ընդլայնել ծրագրավորման սխեման՝ Scheme կամ Netscape զննարկիչում փոփոխության ենթարկել 
+որոշ կարևորագույն տարրեր։ Քանի-որ պահանջը դրված էր խիստ նպատակային, Էյխային ներգրավեցին ընկերություն, 
+որպես սերվերային նյութերի պատասխանատու։ Նա այս աշխատանքը կատարեց շուրջ մեկ ամիս, զբաղվեց ${d}-ի  
+պրոտոկոլի բարելավման աշխատանքներով։ Այստեղ նա ծավալեց նաև նոր ծրագրավորման աշխատանքներ։
+${e}-ին ծրագրավորողը ետ վերադարձավ, զբաղվելով հաճախորդների սպասարկման աշխատանքներով (զննարկիչում),
+որտեղ էլ սկսեց վաստակել նոր ծրագրավորման լեզվի առաջխաղացման հաշվին։ Բացի Թոմ Պակինայից (Tom Paquin), 
+Պիկա Շելլան (Rick Schell) ևս համոզված էր, որ ${b}-ը պետք է աջակցի ծրագրավորման լեզվին, որը գրված է HTML կոդով։
+Մարկ Անդրեսսեն,Բիլլ Ջոյ
+Բրենդան Էյխի հետ համագործակցում էին հիմնադիր (Netscape Communications) Մարկ Անդերսսեն և համահեղինակ (Sun Microsystems) Բիլլ Ջոյը։
+Որպեսզի հաջողությամբ ավարտեին աշխատանքը, ընկերությունը համագործակցության պայմանագիր ստորագրեց։
+Նրանք նպատակ էին դրել՝ ստեղծել այնպիսի ծրագրավորման լեզու, որը բազային ծրագրավորման մաս կկազմեր, հարմար կլիներ և՛ ոճաբանի,
+և՛ ցմ ծրագրավորողի համար, չէր պահանջիի լրացուցիչ ծավալուն և բարդ գործողություններ կատարելու անհրաժեշտություն։ 
+Առաջին ծրագիրը կոչվում էր Mocha, այնուհետև անվանափոխվեց LiveScript և նախատեսված է թե՛  
+որպես ծրագրավորում՝ հաճախորդի համար, և թե՛ որպես ծրագիր՝ սերվերի համար (այնտեղ այն պետք է ունենա LiveWire անվանում)։
+Որպես սինտակսներ հանդես եկան Սի և Java լեզուները, ու, քանի որ այդ ժամանակ Java-ն համարվում էր խիստ ժամանակակից ժամանակակից բառ[7][10],
+${f}-ին LiveScript լեզուն վերանվանեցին JavaScript, ստանալով արտոնագիր Sun-ից։ JavaScript անոնսը Netscape-ի և Sun -ի
+  համար հանդիսանում է բետա-տարբերակի (Netscape Navigator) երկրորդ թողարկումը ։
+${g} թվականին Microsoft ընկերությունը թողարկեց JavaScript լեզուն, JScript անվանումով։ Այն առաջադրվել էր 1996 թվականի հուլիսի
+18-ին[17]։ Առաջին զննարկիչը, որ աշխատեց այս ծրագրի հետ, Internet Explorer 3.0 էր։
+Netscape[18][19]-ը ներկայացված է որպես ECMA ասսոցիացիայի լեզու։ Ստանդարտ տարբերակն ունի ECMAScript անվանումը,
+նկարագրվում է ECMA-262 ստանդարտով։ Առաջին տարբերակը հանդիսացավ JavaScript 1.1 տարբերակը, ինչպես նաև JScript և ScriptEasy[10][20]:"`;
+
+console.log(jsHistory)
+
+
+23. ստեղծում եք ֆունկցիա, որը կաշխատի ֆակտորիալ ֆորմուլայով
+
+	answer:
+	function factorial(num){   
+	let result = 1;
+	for(let i = 1;i < num;i++){
+		result *= (i+1)
+	}return result
+	}console.log(factorial(5))  //120
+
+24. ստեղծում եք ֆունկցիա, որը կաշխատի ֆիբոնաչի ֆորմուլայով
+	
+
+25. ստեղծում եք ֆունկցիա, որը որպես արգումենտ ստանում ա ինչ-որ հայտնի շենք/կառույց, ու վերադարձնում ա էդ շենքի պարամետրերը (բարձրություն, լայնություն, քմ և այլն)
+
+	answer:
+		   function structureHeight(name){
+	switch (name) {
+		case "eiffel tower":
+			return "300 m";
+			break;
+		case "burj khalifa":
+			return"828 m";
+			break;
+		case "pizza tower":
+			return"57 m"
+			break;
+		case "statue of liberty":
+			return"93 m"
+	
+		default:
+			break;
+	}
+  }console.log(structureHeight( "eiffel tower"))//"300 m"
+
+26. ստեղծում եք ֆունկցիա, որը իր մեջ ստեղծում է մեքենաներ (արգումենտներով), որ ամեն կանչելուց կարողանաք այլ պարամետրեր տալ ու ստանալ տարբեր մեքենաներ
+
+	answer:
+		
+function nation (name){
+	switch (name) {
+		case "Germany":
+			return "mercedes, bmw, wolkswagen, audi"
+			break;
+		case "italy":
+			return "ferrari,lamborgini,maserati,alfa romeo";
+			break;
+		case "france":
+			return "renault,peugeot,citroen";
+			break;
+		case "japan":
+			return "toyota,honda,subaru,nissan";
+			break;
+		default:
+			break;
+	}
+
+}console.log(nation("Germany"))//"mercedes, bmw, wolkswagen, audi"
+
+27. ստեղծում եք 2 զանգված, որտեղ առաջինում պետք է լինեն և բացասական և դրական թվեր, ու for loop-ի միջոցով զանգվածից հանեք դրական թվերը, իսկ բացասականները դրեք 2րդ դատարկ զանգվածի մեջ
+		
+answer:
+			
+const arr1 = [1,-1,4,5,-7,8,-9];
+const arr2 = [];
+for(let i = 0;i < arr1.length;i++){
+	if(arr1[i] < 0){
+			arr2.push(arr1[i])
+                arr1.shift(arr1[i])
+                    i -= 1;
+	}else if(arr1[i] > 0){
+			arr1.shift(arr1[i])
+                i -= 1;
+	}
+}console.log(arr1,arr2);
+
+
+
+28. ստեղծում եք օբյեկտ, որտեղ նկարագրում եք մարդու, որը ունի ընկերներ, ստատուսներ, սև ցուցակի մեջ մարդիկ, լայքեր, էլ. հասցե, հեռախոս, գաղտնաբառ և այլն (նմանեցնել Ֆեյսբուքին)
+
+  answer:const socialObj = {
+
+		data:{
+			name:"Jhon",
+			lastname:"Jason",
+			age:"30",
+			from:"USA",
+			telNumber:"xx-yy-xx",
+			emailAdress:"Jhon.aaasdsf.@mail.ru",
+			nikName:"Jhon111222",
+			password:".........."
+		},
+		friends:{
+			friend1:["Any"],
+			friend2:["Mark"],
+			friend3:["Lusi"],
+			friend4:["Jina"],
+			friend5:["Karl"]
+		},
+		likes:{
+			any:["10 like"],
+			mark:["7 like"],
+			lusi:["6 like"],
+			jina:["0 like"],
+			karl:["0 like"]
+		},
+		blackList:{
+			n1:[friends.friend4],
+			n2:[friends.friend5]
+		},
+		visits:{
+			visit1:["Paris,France"],
+			visit2:[`Moscow,Russia with ${friends.friend1}`],
+			visit3:[`Erevan,Armenia with ${friends.friend2}`]
+		}
+}
+
+29. ստեղծում եք զանգված, ու մեջը 10 հատ օբյեկտ, ամեն օբյեկտում ձեր նախընտրած մարդկանց մասին մի քանի ինֆորմացիա՝ անուն ազգանուն, տարիք, մասնագիտություն ու ազգություն, հետո loop-ի միջոցով էդ օբյետկտերի մարդկանց անունները տպում եք կոնսոլում
+	
+	answer:
+		const peoples = {
+	
+	names: [
+		{HovhannesTumanyan: "dob - 19.02,1869, pob - v.Dsegh"},
+		{VahanTeryan: "dob - 28.01.1885, pob - Georgia"},
+		{HovhannesShiraz: "dob - 27.04.1914, pob - c.Gyumri"},
+		{EghisheCharenc: "dob - 13.05.1897, pob - Turkey"},
+		{ParuyrSevak: "dob - 24.01.1924, pob - v.Zangakatun"},
+		{GevorgEmin: "dob - 30.09.1919, pob - c.Ashtarak"},
+		{HamoSahyan: "dob - 14.04.1914, pob - Lor"},
+		{AvetiqIsahakyan: "dob - 30.10.1875, pob - c.Gyumri"},
+		{AkselBakunc: "dob - 13.06.1899, pob - c.Goris"},
+		{GurgenMahari:"dob - 01.08.1903, pob - Turkey"}
+	]
+};for(let i = 0; i < peoples.names.length;i++){
+	console.log(peoples.names[i]);
+}
+
+30. ստեղծում եք Math անունով օբյեկտ, որի մեջ մեթոդներով ստեղծում ենք այն մաթեմատիկական ալգորիթմներ (արմատ, քառակուսի և այլն)
+
+## ի՞նչ կստանանք կանսոլում ԿԱՐԵՎՈՐ Է ՈՐ ԱՌԱՆՑ ԿՈՆՍՈԼ ԱՆԵԼՈՒ ՊԱՏԱՍԽԱՆԵՔ !!!!!!!!!!
+
+31. 
+typeof true    // boolean
+typeof false	 // boolean
+typeof function () {} 	//function
+typeof null		//object
+typeof []	//object
+typeof {}	//object
+typeof " "	//string
+typeof 0       //number
+typeof 1	//number
+typeof NaN	//number
+typeof undefined	//undefined
+typeof Object		//object
+typeof Object()		//function
+typeof Array		//object
+typeof Array()		//function
+typeof Boolean		//boolean
+typeof Bollean()	//boolean
+
+32. NaN || 2 || undefined 	// 2
+
+33. NaN && 2 && undefined	//NaN
+
+34. 1 && 2 && 3			//3
+
+35. !1 && 2 || !3		//false
+
+36. 25 || null && !3		//25
+
+37. NaN || null || !3 || undefined || 5 	 //5
+
+38. NaN || null && !3 && undefined || 5		//
+
+39. 5 === 5 && 3 > 1 || 5			//true
+
+40. 10 <= 8 && !9 || 10 > 5		//
+
+41. 
+const a = true, b = false;
+console.log(!a)		//false
+console.log(!b)		//true
+
+42. 
+const a = true, b = false, c = 4;
+console.log(a || b);  		//true
+console.log(b || b); 		//false
+console.log((c>2) || (c<2));    //true
+
+43. 
+const a = true, b = false;   
+const c = 4;
+console.log(a && a);		//true
+console.log(a && b);		//false
+console.log((c > 2) && (c < 2)); //false
+
+44. 
+const a = 2, b = 'hello';	
+console.log(a !== 2);		//false
+console.log(a !== '2');		//true
+console.log(b !== 'Hello');	//true
+
+45. 
+console.log( true || true );    //true
+console.log( false || true );	//true
+console.log( true || false );	//true
+console.log( false || false );	//false
+
+46. 
+Ինչ կստանանք կոնսոլի մեջ
+let x = 4;
+do {
+     console.log("FALSE");
+     x++;
+} while (x > 4 && x > 6)
+
+		answer:// 1 ՀԱՏ  "FALSE"
+
+47. 
+console.log( 1 || 0 ); 		//1
+console.log( null || 1 );	//1
+console.log( null || 0 || 1 );	//1
+console.log( undefined || null || 0 );	//0
+console.log( null || 2 && 3 || 4 );     //--
+
+48. 
+if (-1 || 0) console.log( 'first' );   	//'first'
+if (-1 && 0) console.log( 'second' );    //undefined
+if (null || -1 && 1) console.log( 'third' );   //'third'
+
+49. 
+console.log(!undefined); //true
+console.log(!null); 	//true
+console.log(!20);	//false
+console.log(!0); 	//true
+console.log(!NaN);	//true
+console.log(!{});	//false
+console.log(!'');	//true
+console.log(!'OK');	//false
+console.log(!false);	//true
+console.log(!true);	//false
+
+50. 
+const a = 5, b = 10;
+(a != b) && (a < b); //false
+(a > b) || (a == b);	//true
+(a < b) || (a == b);	//true
+!(a < b);		//false
+!(a > b);		//true
